@@ -31,11 +31,14 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     years
                 </p>
                 <div className="flex flex-grow justify-center items-center gap-5">
-                    <SecondaryButton>
-                        <div className="flex flex-grow justify-center items-center gap-1">
-                            <ion-icon name="logo-linkedin"></ion-icon>LinkedIn
-                        </div>
-                    </SecondaryButton>
+                    <a href="https://www.linkedin.com/in/jhunriz-b-lalata-036a6b272/">
+                        <SecondaryButton>
+                            <div className="flex flex-grow justify-center items-center gap-1">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                                LinkedIn
+                            </div>
+                        </SecondaryButton>
+                    </a>
                     <button className="`inline-flex items-center px-4 py-2 bg-white border border-gray-300 rounded-md font-semibold text-xs text-dark-300 uppercase tracking-widest shadow-sm focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 disabled:opacity-25 transition ease-in-out duration-150">
                         <div className="flex justify-center items-center gap-1">
                             <ion-icon name="logo-github"></ion-icon>Github
@@ -43,7 +46,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </button>
                 </div>
             </div>
-            <Skills />
+            <div className="py-24 flex justify-center">
+                <Skills />
+            </div>
         </>
     );
 }

@@ -1,3 +1,4 @@
+import { Link } from "@inertiajs/react";
 import React from "react";
 
 export default function SideNav() {
@@ -6,7 +7,9 @@ export default function SideNav() {
             <p className="hover:font-bold cursor-pointer">Home</p>
             <p className="hover:font-bold cursor-pointer">Services</p>
             <p className="hover:font-bold cursor-pointer">About</p>
-            <p className="hover:font-bold cursor-pointer">Skills</p>
+            <Link href="skills">
+                <p className="hover:font-bold cursor-pointer">Skills</p>
+            </Link>
             <p className="hover:font-bold cursor-pointer">Porfolio</p>
             <p className="hover:font-bold cursor-pointer">Blog</p>
             <p className="hover:font-bold cursor-pointer">Contacts</p>
