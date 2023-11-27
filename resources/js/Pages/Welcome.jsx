@@ -23,7 +23,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     A Full Stack Web Developer
                 </p>
                 <p className="lg:text-2xl px-10 font-bold text-gray-500 py-5">
-                    Hey, I am
+                    Hey, I am{" "}
                     <strong className="text-black uppercase">
                         Jhunriz Baroma Lalata
                     </strong>{" "}
