@@ -11,23 +11,23 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
             <Head title="MyPorfolio" />
             <SideNav />
 
-            <div className="relative flex justify-center items-center p-24">
+            <div className="flex justify-center items-center p-32 lg:p-24">
                 <img src={programmer} className="z-20" />
-                <p className="text-9xl font-extrabold absolute z-10 uppercase">
+                <p className="text-6xl lg:text-8xl md:text-9xl font-extrabold absolute z-10 uppercase">
                     Full Stack web developer
                 </p>
             </div>
 
             <div className="flex flex-col justify-center items-center">
-                <p className="text-5xl font-bold uppercase">
+                <p className="lg:text-5xl text-2xl font-bold uppercase">
                     A Full Stack Web Developer
                 </p>
-                <p className="text-2xl font-bold text-gray-500 py-5">
+                <p className="lg:text-2xl px-10 font-bold text-gray-500 py-5">
                     Hey, I am{" "}
                     <strong className="text-black uppercase">
-                        Jhunriz Baroma Lalata{" "}
+                        Jhunriz Baroma Lalata
                     </strong>{" "}
-                    a Full Stack Developer I have Experience in Coding for 4
+                    {}a Full Stack Developer I have Experience in Coding for 4
                     years
                 </p>
                 <div className="flex flex-grow justify-center items-center gap-5">
@@ -46,9 +46,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </button>
                 </div>
             </div>
-            <div className="py-24 flex justify-center">
+            {/* <div className="py-24 flex justify-center">
                 <Skills />
-            </div>
+            </div> */}
         </>
     );
 }
