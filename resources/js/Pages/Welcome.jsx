@@ -13,7 +13,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
 
             <div className="flex justify-center items-center p-32 lg:p-24">
                 <img src={programmer} className="z-20" />
-                <p className="text-6xl lg:text-8xl font-extrabold absolute z-10 uppercase">
+                <p className="text-6xl lg:text-8xl md:text-9xl font-extrabold absolute z-10 uppercase">
                     Full Stack web developer
                 </p>
             </div>
@@ -46,9 +46,9 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </button>
                 </div>
             </div>
-            <div className="py-24 flex justify-center">
+            {/* <div className="py-24 flex justify-center">
                 <Skills />
-            </div>
+            </div> */}
         </>
     );
 }
